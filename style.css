@@ -21,7 +21,8 @@ html {
 }
 
 body {
-	margin: 0;
+	
+	margin: auto;
 	padding: 30px;
 	font-family: 'Alice', serif;
 	font-size: 18px;
@@ -41,3 +42,81 @@ blockquote {
 }
 
 /* --------------------------------------------------- */
+article {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	gap: 40px;
+	align-items: start;
+}
+article > * {
+	grid-column: 2;
+}
+
+figure {
+	grid-column: 1 / -1;
+	margin: 0;
+	padding: 0;
+}
+
+.tip-vlevo {
+	text-align: right;
+	grid-column: 1;
+	border-right: 1px solid var(--oranzova);
+}
+
+.tip-vpravo {
+	text-align: left;
+	grid-column: 3;
+	border-left: 1px solid var(--oranzova);
+}
+.tip {
+	font-size: 1rem;
+	color: var(--tmava);
+	background-color: var(--svetla);
+	padding: 1rem;
+	margin-top: 1rem;
+}
+.tip a {color: var(--oranzova);}
+
+h1{
+	font-size: 5vw;
+	color: var(--zelena);
+}
+h2 {
+	font-size: 3rem;
+	color: var(--limetka);
+	margin: 0;
+}
+.meta,
+figcaption {
+	font-size: 1vw;
+	color: var(--seda);
+}
+blockquote {
+	font-size: 2rem;
+	color: var(--seda);
+	text-align: center;
+	grid-column: 1 / -1;
+	margin: 0;
+}	
+blockquote::before,
+blockquote::after {
+	font-family: Arial, Helvetica, sans-serif;
+    content: " ";
+    width: 100%;
+	padding-bottom: 1.5rem;
+	display: inline-block;
+    content: "____________";
+    font-size: 2rem;
+    color: var(--limetka);
+}
+
+
+footer {
+	font-size: 1.2vw;
+	color: var(--seda);
+}
+footer a {color: var(--seda);}
