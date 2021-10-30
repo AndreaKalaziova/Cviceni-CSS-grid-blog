@@ -1,0 +1,19 @@
+.tip-vlevo {
+	text-align: right;
+	grid-column: 1;
+	border-right: 1px solid var(--oranzova);
+}
+
+.tip-vpravo {
+	text-align: left;
+	grid-column: 3;
+	border-left: 1px solid var(--oranzova);
+}
+.tip {
+	font-size: 1rem;
+	color: var(--tmava);
+	background-color: var(--svetla);
+	padding: 1rem;
+	margin-top: 1rem;
+}
+.tip a {color: var(--oranzova);}
